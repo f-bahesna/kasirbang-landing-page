@@ -6,23 +6,23 @@ import reportIcon from "@assets/generated_images/sales_report_analytics_icon.png
 
 const features = [
   {
-    title: "Offline POS",
-    description: "Complete transactions without internet. All your sales data is stored locally and syncs automatically when connection returns. Never miss a sale during outages.",
+    title: "POS Offline",
+    description: "Proses transaksi tanpa internet. Semua data penjualan tersimpan lokal dan sinkron otomatis saat koneksi kembali. Tidak ada lagi penjualan yang hilang saat mati lampu atau gangguan jaringan.",
     image: offlineIcon,
   },
   {
-    title: "One Lifetime Buy",
-    description: "Pay once, use forever. No hidden fees, no recurring subscriptions. You own the software completely with lifetime updates and support included.",
+    title: "Sekali Beli Selamanya",
+    description: "Bayar sekali, pakai seumur hidup. Tidak ada biaya tersembunyi, tidak ada langganan bulanan. Anda memiliki software sepenuhnya termasuk update dan dukungan selamanya.",
     image: lifetimeIcon,
   },
   {
-    title: "Manage Stock",
-    description: "Real-time inventory tracking with low-stock alerts. Know exactly what you have, what's selling, and when to reorder. Keep your business running smoothly.",
+    title: "Kelola Stok",
+    description: "Pantau inventaris secara real-time dengan notifikasi stok menipis. Ketahui persis barang apa yang tersedia, mana yang laris, dan kapan harus restock.",
     image: stockIcon,
   },
   {
-    title: "Sales Report",
-    description: "Comprehensive analytics dashboard with daily, weekly, and monthly reports. Export to PDF or Excel. Make data-driven decisions for your business.",
+    title: "Laporan Penjualan",
+    description: "Dashboard analitik lengkap dengan laporan harian, mingguan, dan bulanan. Export ke PDF atau Excel. Buat keputusan bisnis berdasarkan data yang akurat.",
     image: reportIcon,
   },
 ];
@@ -36,12 +36,12 @@ export default function FeaturesSection() {
             className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4"
             data-testid="text-features-headline"
           >
-            Everything You Need to{" "}
-            <span className="text-primary">Run Your Business</span>
+            Semua yang Anda Butuhkan untuk{" "}
+            <span className="text-primary">Kelola Bisnis</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            KASIRBANG comes packed with features designed specifically for Indonesian businesses.
-            Simple to use, powerful when you need it.
+            KASIRBANG hadir dengan fitur lengkap yang dirancang khusus untuk bisnis Indonesia.
+            Mudah digunakan, powerful saat dibutuhkan.
           </p>
         </div>
 

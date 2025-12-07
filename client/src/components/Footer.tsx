@@ -3,19 +3,19 @@ import { SiWhatsapp, SiInstagram, SiFacebook } from "react-icons/si";
 
 const footerLinks = {
   product: [
-    { label: "Features", href: "#features" },
-    { label: "Pricing", href: "#pricing" },
+    { label: "Fitur", href: "#features" },
+    { label: "Harga", href: "#pricing" },
     { label: "FAQ", href: "#faq" },
   ],
   support: [
-    { label: "Documentation", href: "#" },
-    { label: "Contact Us", href: "#" },
+    { label: "Dokumentasi", href: "#" },
+    { label: "Hubungi Kami", href: "#" },
     { label: "WhatsApp Support", href: "#" },
   ],
   legal: [
-    { label: "Privacy Policy", href: "#" },
-    { label: "Terms of Service", href: "#" },
-    { label: "Refund Policy", href: "#" },
+    { label: "Kebijakan Privasi", href: "#" },
+    { label: "Syarat & Ketentuan", href: "#" },
+    { label: "Kebijakan Refund", href: "#" },
   ],
 };
 
@@ -39,7 +39,7 @@ export default function Footer() {
               <span className="text-xl font-bold">KASIRBANG</span>
             </div>
             <p className="text-sm text-muted-foreground mb-4">
-              Indonesia's first offline POS system. Built for businesses that never stop.
+              Sistem POS offline pertama di Indonesia. Dibuat untuk bisnis yang tidak pernah berhenti.
             </p>
             <div className="flex gap-3">
               <a 
@@ -70,7 +70,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Product</h4>
+            <h4 className="font-semibold mb-4">Produk</h4>
             <ul className="space-y-2">
               {footerLinks.product.map((link) => (
                 <li key={link.label}>
@@ -87,7 +87,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Support</h4>
+            <h4 className="font-semibold mb-4">Dukungan</h4>
             <ul className="space-y-2">
               {footerLinks.support.map((link) => (
                 <li key={link.label}>
@@ -124,10 +124,10 @@ export default function Footer() {
         <div className="mt-12 pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground" data-testid="text-copyright">
-              © {new Date().getFullYear()} KASIRBANG. All rights reserved.
+              © {new Date().getFullYear()} KASIRBANG. Hak cipta dilindungi.
             </p>
             <p className="text-sm text-muted-foreground">
-              Made with care in Indonesia
+              Dibuat dengan sepenuh hati di Indonesia
             </p>
           </div>
         </div>

@@ -8,12 +8,12 @@ interface PricingSectionProps {
 }
 
 const includedFeatures = [
-  "Offline POS System",
-  "Stock Management",
-  "Sales Reports & Analytics",
-  "Unlimited Transactions",
-  "Lifetime Updates",
-  "Customer Support",
+  "Sistem POS Offline",
+  "Manajemen Stok",
+  "Laporan & Analitik Penjualan",
+  "Transaksi Unlimited",
+  "Update Selamanya",
+  "Dukungan Pelanggan",
 ];
 
 export default function PricingSection({ onBuyNow }: PricingSectionProps) {
@@ -25,25 +25,36 @@ export default function PricingSection({ onBuyNow }: PricingSectionProps) {
             className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4"
             data-testid="text-pricing-headline"
           >
-            Simple, <span className="text-primary">One-Time</span> Pricing
+            Harga <span className="text-primary">Spesial</span> untuk Anda
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            No monthly fees. No hidden costs. Pay once, use forever.
+            Tanpa biaya bulanan. Tanpa biaya tersembunyi. Bayar sekali, pakai selamanya.
           </p>
         </div>
 
         <div className="max-w-lg mx-auto">
           <Card className="p-8 md:p-12 relative overflow-visible">
             <Badge className="absolute -top-3 left-1/2 -translate-x-1/2">
-              Best Value
+              Hemat 33%
             </Badge>
 
             <div className="text-center mb-8">
-              <p className="text-muted-foreground mb-2">Lifetime License</p>
-              <div className="flex items-baseline justify-center gap-1">
-                <span className="text-5xl md:text-6xl font-bold" data-testid="text-price">Rp 1.500.000</span>
+              <p className="text-muted-foreground mb-2">Lisensi Selamanya</p>
+              <div className="flex flex-col items-center gap-1">
+                <span 
+                  className="text-xl text-muted-foreground line-through"
+                  data-testid="text-normal-price"
+                >
+                  Rp 9.000.000
+                </span>
+                <span 
+                  className="text-5xl md:text-6xl font-bold text-primary" 
+                  data-testid="text-discount-price"
+                >
+                  Rp 6.000.000
+                </span>
               </div>
-              <p className="text-sm text-muted-foreground mt-2">One-time payment</p>
+              <p className="text-sm text-muted-foreground mt-2">Pembayaran sekali selamanya</p>
             </div>
 
             <div className="space-y-3 mb-8">
@@ -67,25 +78,25 @@ export default function PricingSection({ onBuyNow }: PricingSectionProps) {
               onClick={onBuyNow}
               data-testid="button-buy-now-pricing"
             >
-              Buy KASIRBANG Now
+              Beli KASIRBANG Sekarang
             </Button>
 
             <div className="mt-6 pt-6 border-t border-border">
               <p className="text-center text-sm text-muted-foreground mb-4">
-                Compare: Competitors charge Rp 500.000/month = Rp 6.000.000/year
+                Bandingkan: Kompetitor memungut Rp 500.000/bulan = Rp 6.000.000/tahun
               </p>
               <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
                 <div className="flex items-center gap-1.5">
                   <Shield className="w-4 h-4" />
-                  <span>30-Day Guarantee</span>
+                  <span>Garansi 30 Hari</span>
                 </div>
                 <div className="flex items-center gap-1.5">
                   <Clock className="w-4 h-4" />
-                  <span>Lifetime Updates</span>
+                  <span>Update Selamanya</span>
                 </div>
                 <div className="flex items-center gap-1.5">
                   <Headphones className="w-4 h-4" />
-                  <span>Priority Support</span>
+                  <span>Dukungan Prioritas</span>
                 </div>
               </div>
             </div>

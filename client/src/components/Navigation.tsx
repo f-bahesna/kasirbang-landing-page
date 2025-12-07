@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Wifi, WifiOff } from "lucide-react";
+import { Menu, X, WifiOff } from "lucide-react";
 
 interface NavigationProps {
   onGetStarted?: () => void;
@@ -10,8 +10,8 @@ export default function Navigation({ onGetStarted }: NavigationProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: "Features", href: "#features" },
-    { label: "Pricing", href: "#pricing" },
+    { label: "Fitur", href: "#features" },
+    { label: "Harga", href: "#pricing" },
     { label: "FAQ", href: "#faq" },
   ];
 
@@ -50,7 +50,7 @@ export default function Navigation({ onGetStarted }: NavigationProps) {
               onClick={onGetStarted}
               data-testid="button-get-started-nav"
             >
-              Get Started
+              Mulai Sekarang
             </Button>
           </div>
 
@@ -84,7 +84,7 @@ export default function Navigation({ onGetStarted }: NavigationProps) {
                   onClick={onGetStarted}
                   data-testid="button-get-started-mobile"
                 >
-                  Get Started
+                  Mulai Sekarang
                 </Button>
               </div>
             </div>

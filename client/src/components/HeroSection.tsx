@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { WifiOff, CreditCard, Clock } from "lucide-react";
-import heroImage from "@assets/generated_images/kasirbang_pos_tablet_interface.png";
+import heroImage from "@assets/generated_images/indonesian_shop_with_pos_tablet.png";
 
 interface HeroSectionProps {
   onBuyNow?: () => void;
@@ -10,9 +10,9 @@ interface HeroSectionProps {
 
 export default function HeroSection({ onBuyNow, onSeeDemo }: HeroSectionProps) {
   const trustBadges = [
-    { icon: WifiOff, label: "100% Offline Capable" },
-    { icon: CreditCard, label: "One-Time Payment" },
-    { icon: Clock, label: "No Monthly Fees" },
+    { icon: WifiOff, label: "100% Bisa Offline" },
+    { icon: CreditCard, label: "Bayar Sekali" },
+    { icon: Clock, label: "Tanpa Biaya Bulanan" },
   ];
 
   return (
@@ -22,22 +22,22 @@ export default function HeroSection({ onBuyNow, onSeeDemo }: HeroSectionProps) {
           <div className="space-y-8">
             <div className="space-y-4">
               <Badge variant="secondary" className="text-sm">
-                Indonesia's First Offline POS
+                POS Offline Pertama di Indonesia
               </Badge>
               <h1 
                 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight"
                 data-testid="text-hero-headline"
               >
-                Never Lose a Sale{" "}
-                <span className="text-primary">Again</span>
+                Jangan Pernah Kehilangan{" "}
+                <span className="text-primary">Penjualan Lagi</span>
               </h1>
               <p 
                 className="text-lg md:text-xl text-muted-foreground max-w-lg"
                 data-testid="text-hero-subheadline"
               >
-                KASIRBANG works even without internet connection. Complete transactions, 
-                manage stock, and generate reports - all offline. Data syncs automatically 
-                when you're back online.
+                KASIRBANG tetap berjalan meski tanpa koneksi internet. Proses transaksi, 
+                kelola stok, dan buat laporan - semuanya offline. Data otomatis tersinkron 
+                saat Anda online kembali.
               </p>
             </div>
 
@@ -48,7 +48,7 @@ export default function HeroSection({ onBuyNow, onSeeDemo }: HeroSectionProps) {
                 className="text-base"
                 data-testid="button-buy-lifetime"
               >
-                Buy Lifetime License
+                Beli Lisensi Selamanya
               </Button>
               <Button 
                 size="lg" 
@@ -57,7 +57,7 @@ export default function HeroSection({ onBuyNow, onSeeDemo }: HeroSectionProps) {
                 className="text-base"
                 data-testid="button-see-demo"
               >
-                See Demo
+                Lihat Demo
               </Button>
             </div>
 
@@ -79,7 +79,7 @@ export default function HeroSection({ onBuyNow, onSeeDemo }: HeroSectionProps) {
             <div className="relative rounded-lg overflow-hidden shadow-2xl border border-border">
               <img
                 src={heroImage}
-                alt="KASIRBANG POS System Interface"
+                alt="Sistem POS KASIRBANG di Toko"
                 className="w-full h-auto"
                 data-testid="img-hero"
               />

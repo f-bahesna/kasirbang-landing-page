@@ -1,23 +1,23 @@
-import { CreditCard, Download, ShoppingBag } from "lucide-react";
+import { Package, Phone, UserCheck } from "lucide-react";
 
 const steps = [
   {
     number: 1,
-    title: "Purchase License",
-    description: "Make a one-time payment for lifetime access. No subscriptions, no hidden fees.",
-    icon: CreditCard,
+    title: "Pilih Paket",
+    description: "Pilih paket KASIRBANG yang sesuai dengan kebutuhan bisnis Anda.",
+    icon: Package,
   },
   {
     number: 2,
-    title: "Install & Setup",
-    description: "Download and install in minutes. Our simple setup wizard gets you running fast.",
-    icon: Download,
+    title: "Hubungi Admin",
+    description: "Hubungi admin kami via WhatsApp atau telepon untuk konfirmasi pemesanan.",
+    icon: Phone,
   },
   {
     number: 3,
-    title: "Start Selling",
-    description: "Begin processing transactions immediately. Works online or offline.",
-    icon: ShoppingBag,
+    title: "Konsultan IT Datang",
+    description: "Tim konsultan IT kami akan datang ke lokasi Anda untuk instalasi dan pelatihan.",
+    icon: UserCheck,
   },
 ];
 
@@ -30,10 +30,10 @@ export default function HowItWorksSection() {
             className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4"
             data-testid="text-how-it-works-headline"
           >
-            Get Started in <span className="text-primary">3 Simple Steps</span>
+            Mulai dalam <span className="text-primary">3 Langkah Mudah</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            From purchase to your first sale in under 10 minutes. It's that easy.
+            Dari pemesanan hingga siap pakai, kami yang urus semuanya untuk Anda.
           </p>
         </div>
 

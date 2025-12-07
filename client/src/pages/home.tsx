@@ -17,15 +17,15 @@ export default function Home() {
 
   const handleBuyNow = () => {
     toast({
-      title: "Opening checkout...",
-      description: "You'll be redirected to complete your purchase.",
+      title: "Membuka checkout...",
+      description: "Anda akan diarahkan untuk menyelesaikan pembelian.",
     });
   };
 
   const handleSeeDemo = () => {
     toast({
-      title: "Demo requested",
-      description: "We'll send you a demo link to your email shortly.",
+      title: "Demo diminta",
+      description: "Kami akan mengirimkan link demo ke email Anda segera.",
     });
   };
 

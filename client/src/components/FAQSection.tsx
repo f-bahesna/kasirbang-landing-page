@@ -7,28 +7,28 @@ import {
 
 const faqs = [
   {
-    question: "How does offline mode work?",
-    answer: "KASIRBANG stores all transaction data locally on your device. When you're offline, you can still process sales, manage stock, and view reports. Once your internet connection returns, the app automatically syncs all data to the cloud.",
+    question: "Bagaimana cara kerja mode offline?",
+    answer: "KASIRBANG menyimpan semua data transaksi secara lokal di perangkat Anda. Saat offline, Anda tetap bisa memproses penjualan, mengelola stok, dan melihat laporan. Begitu koneksi internet kembali, aplikasi otomatis menyinkronkan semua data ke cloud.",
   },
   {
-    question: "What's included in the lifetime license?",
-    answer: "Your one-time purchase includes the full POS system, stock management, sales reports, unlimited transactions, free lifetime updates, and customer support. There are no recurring fees or hidden costs.",
+    question: "Apa saja yang termasuk dalam lisensi selamanya?",
+    answer: "Pembelian sekali Anda mencakup sistem POS lengkap, manajemen stok, laporan penjualan, transaksi unlimited, update selamanya gratis, dan dukungan pelanggan. Tidak ada biaya berulang atau biaya tersembunyi.",
   },
   {
-    question: "Can I use KASIRBANG on multiple devices?",
-    answer: "Each license covers one device. If you need to use KASIRBANG on multiple devices or locations, you can purchase additional licenses at a discounted rate.",
+    question: "Bisakah saya menggunakan KASIRBANG di beberapa perangkat?",
+    answer: "Setiap lisensi mencakup satu perangkat. Jika Anda perlu menggunakan KASIRBANG di beberapa perangkat atau lokasi, Anda bisa membeli lisensi tambahan dengan harga diskon.",
   },
   {
-    question: "What happens if I need help?",
-    answer: "We provide customer support via WhatsApp and email. Our team is available during business hours to help you with setup, troubleshooting, or any questions about using KASIRBANG.",
+    question: "Bagaimana jika saya butuh bantuan?",
+    answer: "Kami menyediakan dukungan pelanggan via WhatsApp dan email. Tim kami tersedia di jam kerja untuk membantu Anda dengan setup, troubleshooting, atau pertanyaan apapun tentang penggunaan KASIRBANG.",
   },
   {
-    question: "Is my data secure?",
-    answer: "Yes, all your data is encrypted and stored securely. When offline, data is stored locally with encryption. Cloud syncing uses secure HTTPS connections to protect your business information.",
+    question: "Apakah data saya aman?",
+    answer: "Ya, semua data Anda terenkripsi dan tersimpan dengan aman. Saat offline, data disimpan secara lokal dengan enkripsi. Sinkronisasi cloud menggunakan koneksi HTTPS yang aman untuk melindungi informasi bisnis Anda.",
   },
   {
-    question: "Do you offer a money-back guarantee?",
-    answer: "Yes! We offer a 30-day money-back guarantee. If KASIRBANG doesn't meet your needs, contact us within 30 days for a full refund, no questions asked.",
+    question: "Apakah ada garansi uang kembali?",
+    answer: "Ya! Kami menawarkan garansi uang kembali 30 hari. Jika KASIRBANG tidak memenuhi kebutuhan Anda, hubungi kami dalam 30 hari untuk pengembalian dana penuh, tanpa pertanyaan.",
   },
 ];
 
@@ -41,10 +41,10 @@ export default function FAQSection() {
             className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4"
             data-testid="text-faq-headline"
           >
-            Frequently Asked <span className="text-primary">Questions</span>
+            Pertanyaan yang Sering <span className="text-primary">Ditanyakan</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Got questions? We've got answers. If you don't see what you're looking for, reach out to our support team.
+            Punya pertanyaan? Kami punya jawabannya. Jika tidak menemukan yang Anda cari, hubungi tim support kami.
           </p>
         </div>
 
