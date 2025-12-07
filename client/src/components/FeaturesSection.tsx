@@ -1,8 +1,9 @@
 import { Card } from "@/components/ui/card";
-import offlineIcon from "@assets/generated_images/offline_sync_feature_icon.png";
-import lifetimeIcon from "@assets/generated_images/lifetime_purchase_feature_icon.png";
-import stockIcon from "@assets/generated_images/stock_management_feature_icon.png";
-import reportIcon from "@assets/generated_images/sales_report_analytics_icon.png";
+import offlineIcon from "@assets/generated_images/offline_mode_feature_icon.png";
+import lifetimeIcon from "@assets/generated_images/lifetime_purchase_icon.png";
+import stockIcon from "@assets/generated_images/stock_management_icon.png";
+import reportIcon from "@assets/generated_images/sales_report_icon.png";
+import storeImage from "@assets/generated_images/building_materials_store_interior.png";
 
 const features = [
   {
@@ -17,7 +18,7 @@ const features = [
   },
   {
     title: "Kelola Stok",
-    description: "Pantau inventaris secara real-time dengan notifikasi stok menipis. Ketahui persis barang apa yang tersedia, mana yang laris, dan kapan harus restock.",
+    description: "Pantau inventaris secara real-time dengan notifikasi stok menipis. Ketahui persis barang apa yang tersedia, mana yang laris, dan kapan harus restock. Cocok untuk ribuan SKU bahan bangunan.",
     image: stockIcon,
   },
   {
@@ -37,12 +38,32 @@ export default function FeaturesSection() {
             data-testid="text-features-headline"
           >
             Semua yang Anda Butuhkan untuk{" "}
-            <span className="text-primary">Kelola Bisnis</span>
+            <span className="text-primary">Kelola Toko Bangunan</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            KASIRBANG hadir dengan fitur lengkap yang dirancang khusus untuk bisnis Indonesia.
+            KASIRBANG hadir dengan fitur lengkap yang dirancang khusus untuk toko bangunan dan material.
             Mudah digunakan, powerful saat dibutuhkan.
           </p>
+        </div>
+
+        <div className="mb-12">
+          <div className="relative rounded-lg overflow-hidden shadow-xl border border-border">
+            <img 
+              src={storeImage} 
+              alt="Interior Toko Bangunan dengan KASIRBANG"
+              className="w-full h-64 md:h-80 object-cover"
+              data-testid="img-store"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
+            <div className="absolute bottom-6 left-6 right-6">
+              <p className="text-lg md:text-xl font-semibold text-foreground">
+                Dirancang khusus untuk toko bangunan & material
+              </p>
+              <p className="text-sm text-muted-foreground mt-1">
+                Kelola semen, pipa, cat, keramik, dan ribuan produk lainnya dengan mudah
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6 lg:gap-8">

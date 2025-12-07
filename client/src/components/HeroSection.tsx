@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { WifiOff, CreditCard, Clock } from "lucide-react";
-import heroImage from "@assets/generated_images/indonesian_shop_with_pos_tablet.png";
+import heroImage from "@assets/generated_images/building_materials_pos_interface.png";
 
 interface HeroSectionProps {
   onBuyNow?: () => void;
@@ -36,8 +36,8 @@ export default function HeroSection({ onBuyNow, onSeeDemo }: HeroSectionProps) {
                 data-testid="text-hero-subheadline"
               >
                 KASIRBANG tetap berjalan meski tanpa koneksi internet. Proses transaksi, 
-                kelola stok, dan buat laporan - semuanya offline. Data otomatis tersinkron 
-                saat Anda online kembali.
+                kelola stok, dan buat laporan - semuanya offline. Cocok untuk toko bangunan, 
+                material, dan bisnis retail lainnya.
               </p>
             </div>
 
@@ -79,7 +79,7 @@ export default function HeroSection({ onBuyNow, onSeeDemo }: HeroSectionProps) {
             <div className="relative rounded-lg overflow-hidden shadow-2xl border border-border">
               <img
                 src={heroImage}
-                alt="Sistem POS KASIRBANG di Toko"
+                alt="Tampilan Kasir KASIRBANG untuk Toko Bangunan"
                 className="w-full h-auto"
                 data-testid="img-hero"
               />
