@@ -32,9 +32,9 @@ export default function PricingSection({ onBuyNow }: PricingSectionProps) {
           </p>
         </div>
 
-      <div className="grid lg:grid-cols-2 gap-4">
+      <div className="grid md:grid-cols-2 gap-4">
         {/* left */}
-        <div className="max-w-lg mx-auto">
+        <div className="max-w-sm md:max-w-md lg:max-w-lg mx-auto">
           <Card className="p-8 md:p-12 relative overflow-visible">
             <Badge className="absolute -top-3 left-1/2 -translate-x-1/2">
               Hemat 79%
@@ -106,7 +106,7 @@ export default function PricingSection({ onBuyNow }: PricingSectionProps) {
           </Card>
         </div>
         {/* right */}
-        <div className="max-w-lg mx-auto">
+        <div className="max-w-sm md:max-w-md lg:max-w-lg mx-auto">
           <Card className="p-8 md:p-12 relative overflow-visible">
             <Badge className="absolute -top-3 left-1/2 -translate-x-1/2">
               Hemat 54%
