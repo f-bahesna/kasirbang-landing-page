@@ -124,10 +124,18 @@ export default function Footer() {
         <div className="mt-12 pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground" data-testid="text-copyright">
-              © {new Date().getFullYear()} KASIRBANG. Hak cipta dilindungi.
+              © 2023 - {new Date().getFullYear()} KASIRBANG. Hak cipta dilindungi.
             </p>
             <p className="text-sm text-muted-foreground">
-              Dibuat dengan sepenuh hati di Indonesia
+              Dibuat dengan sepenuh hati di Indonesia oleh {" "}
+              <a
+                href="https://fbahesna.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-foreground transition-colors"
+              >
+              Frada Bahesna
+              </a>
             </p>
           </div>
         </div>

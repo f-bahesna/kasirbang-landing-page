@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, WifiOff } from "lucide-react";
+import KasirbangLogo from "@assets/kasirbang_logo.png";
 
 interface NavigationProps {
   onGetStarted?: () => void;
@@ -26,10 +27,11 @@ export default function Navigation({ onGetStarted }: NavigationProps) {
       <nav className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex items-center justify-between gap-4 h-16">
           <div className="flex items-center gap-2">
-            <div className="flex items-center justify-center w-8 h-8 rounded-md bg-primary">
+            {/* <div className="flex items-center justify-center w-8 h-8 rounded-md bg-primary">
               <WifiOff className="w-4 h-4 text-primary-foreground" />
             </div>
-            <span className="text-xl font-bold" data-testid="text-logo">KASIRBANG</span>
+            <span className="text-xl font-bold" data-testid="text-logo">KASIRBANG</span> */}
+            <img className="h-10 w-70 shadow-md rounded-xl" src={KasirbangLogo}/>
           </div>
 
           <div className="hidden md:flex items-center gap-8">

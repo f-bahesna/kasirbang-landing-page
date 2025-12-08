@@ -17,10 +17,18 @@ export default function Home() {
 
   const handleBuyNow = () => {
     toast({
-      title: "Membuka checkout...",
-      description: "Anda akan diarahkan untuk menyelesaikan pembelian.",
+      title: "Membuka whatsapp...",
+      description: "Anda akan diarahkan ke Whatsapp untuk bertanya ke Admin.",
     });
+
+    setTimeout(openWindowWhatsappLink, 2000)
   };
+
+  const openWindowWhatsappLink = () => {
+    const whatsappLink = 'https://api.whatsapp.com/send/?phone=6282133280057&text=Halo+Min+%EF%BF%BD%2C+saya+tertarik+aplikasi+kasirbang+dan+mau+konsultasi+dulu.+Bisa+dibantu+ya%3F+%EF%BF%BD&type=phone_number&app_absent=0'
+    
+    window.open(whatsappLink, '_blank');
+  }
 
   const handleSeeDemo = () => {
     toast({

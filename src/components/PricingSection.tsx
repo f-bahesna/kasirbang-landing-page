@@ -35,7 +35,7 @@ export default function PricingSection({ onBuyNow }: PricingSectionProps) {
         <div className="max-w-lg mx-auto">
           <Card className="p-8 md:p-12 relative overflow-visible">
             <Badge className="absolute -top-3 left-1/2 -translate-x-1/2">
-              Hemat 33%
+              Hemat 54%
             </Badge>
 
             <div className="text-center mb-8">
@@ -45,13 +45,13 @@ export default function PricingSection({ onBuyNow }: PricingSectionProps) {
                   className="text-xl text-muted-foreground line-through"
                   data-testid="text-normal-price"
                 >
-                  Rp 9.000.000
+                  Rp 15.250.000
                 </span>
                 <span 
                   className="text-5xl md:text-6xl font-bold text-primary" 
                   data-testid="text-discount-price"
                 >
-                  Rp 6.000.000
+                  Rp 7.000.000
                 </span>
               </div>
               <p className="text-sm text-muted-foreground mt-2">Pembayaran sekali selamanya</p>
