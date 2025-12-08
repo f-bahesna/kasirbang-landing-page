@@ -21,20 +21,26 @@ export default function Home() {
       description: "Anda akan diarahkan ke Whatsapp untuk bertanya ke Admin.",
     });
 
-    setTimeout(openWindowWhatsappLink, 2000)
+    const message = 'https://api.whatsapp.com/send/?phone=6282133280057&text=Halo+Min+%EF%BF%BD%2C+saya+tertarik+aplikasi+kasirbang+dan+mau+konsultasi+dulu.+Bisa+dibantu+ya%3F+%EF%BF%BD&type=phone_number&app_absent=0'
+
+    setTimeout(() => openWindowWhatsappLink(message), 2000)
   };
 
-  const openWindowWhatsappLink = () => {
-    const whatsappLink = 'https://api.whatsapp.com/send/?phone=6282133280057&text=Halo+Min+%EF%BF%BD%2C+saya+tertarik+aplikasi+kasirbang+dan+mau+konsultasi+dulu.+Bisa+dibantu+ya%3F+%EF%BF%BD&type=phone_number&app_absent=0'
+  const openWindowWhatsappLink = (message: string) => {
+    const whatsappLink = message
     
     window.open(whatsappLink, '_blank');
   }
 
   const handleSeeDemo = () => {
     toast({
-      title: "Demo diminta",
-      description: "Kami akan mengirimkan link demo ke email Anda segera.",
+      title: "Demo diminta...",
+      description: "Kami akan mengarahkan ke whatsapp untuk bertanya mengenai Demo.",
     });
+
+    const message = 'https://api.whatsapp.com/send/?phone=6282133280057&text=Halo+Min+%EF%BF%BD%2C+saya+ingin+mencoba+demo+kasirbang.+Bisa+dibantu+ya%3F+%EF%BF%BD&type=phone_number&app_absent=0'
+
+    setTimeout(() => openWindowWhatsappLink(message), 2000) 
   };
 
   return (

@@ -38,7 +38,7 @@ export default function HowItWorksSection() {
         </div>
 
         <div className="relative">
-          <div className="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 bg-border -translate-y-1/2 z-0" />
+          <div className="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 bg-border -translate-y-1/2 z-0"/>
           
           <div className="grid md:grid-cols-3 gap-8 relative z-10">
             {steps.map((step) => (
@@ -55,7 +55,7 @@ export default function HowItWorksSection() {
                     <span className="text-sm font-bold text-primary">{step.number}</span>
                   </div>
                 </div>
-                <h3 className="text-xl font-bold mb-2">{step.title}</h3>
+                <h3 className="text-xl font-bold mb-4">{step.title}</h3>
                 <p className="text-muted-foreground max-w-xs">{step.description}</p>
               </div>
             ))}
