@@ -31,7 +31,7 @@ export default function PricingSection({ onBuyNow }: PricingSectionProps) {
             Tanpa biaya bulanan. Tanpa biaya tersembunyi. Bayar sekali, pakai selamanya.
           </p>
         </div>
-      <div className="grid md:grid-cols-2 gap-4">
+      <div className="grid lg:grid-cols-2 gap-4">
         {/* left */}
         <div className="max-w-lg mx-auto">
           <Card className="p-8 md:p-12 relative overflow-visible">
