@@ -19,8 +19,8 @@ const includedFeatures = [
 export default function PricingSection({ onBuyNow }: PricingSectionProps) {
   return (
     <section id="pricing" className="py-16 md:py-24 bg-muted/30">
-      <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-        <div className="text-center mb-12">
+      <div className="max-w-7xl mx-auto  md:px-6 lg:px-8">
+        <div className="text-center mb-12 ">
           <h2 
             className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4"
             data-testid="text-pricing-headline"
@@ -31,6 +31,7 @@ export default function PricingSection({ onBuyNow }: PricingSectionProps) {
             Tanpa biaya bulanan. Tanpa biaya tersembunyi. Bayar sekali, pakai selamanya.
           </p>
         </div>
+
       <div className="grid lg:grid-cols-2 gap-4">
         {/* left */}
         <div className="max-w-lg mx-auto">
